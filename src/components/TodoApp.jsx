@@ -13,7 +13,7 @@ const TodoApp = () => {
   };
 
   const handleSubmit = async () => {
-    let resp = await axios.("http://localhost:4004/todos", {
+    let resp = await axios.post("http://localhost:4004/todos", {
       value: value,
       isCompleted: false,
     });
